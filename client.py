@@ -3,7 +3,7 @@ from threading import Thread
 import tkinter
 
 
-def receive_utf():
+def receive_msg():
     while True:
         try:
             msg = client_socket.recv(BUFSIZ).decode("utf8")
@@ -61,6 +61,6 @@ ADDR = (HOST, PORT)
 client_socket = socket(AF_INET, SOCK_STREAM)
 client_socket.connect(ADDR)
 
-receive_thread = Thread(target=receive_utf)
+receive_thread = Thread(target=receive_msg)
 receive_thread.start()
 tkinter.mainloop()  
