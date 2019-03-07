@@ -13,5 +13,15 @@ How to change the port?
 
 Simply go to the [server.py] file, and edit the `Port` part.
 
+Thats it.
+----------------------------------------
+Any questions?
+
+Message me on discord or on email.
+----------------------------------------
+
+
+
+
 
 
