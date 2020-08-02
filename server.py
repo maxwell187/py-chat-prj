@@ -28,7 +28,7 @@ def clienthandler(client):
             client.send(bytes("{quit}", "utf8"))
             client.close()
             del clients[client]
-            broadcast(bytes("%s left the chat." % name, "utf8"))
+            broadcast(bytes("%s has left the chat." % name, "utf8"))
             break
 
 
